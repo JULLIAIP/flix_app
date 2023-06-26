@@ -27,3 +27,25 @@ Crie um arquivo .env na raiz do projeto e defina as variáveis de ambiente neces
 ### Execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
 npm run dev
+
+## Endpoints
+O Flix App fornece os seguintes endpoints para interação com a API:
+
+### Sign Up
+URL: /signup
+Método: POST
+Descrição: Cria um novo usuário na aplicação.
+Parâmetros do corpo da requisição:
+username (string): Nome de usuário do novo usuário.
+email (string): Endereço de e-mail do novo usuário.
+password (string): Senha do novo usuário.
+
+### Login
+URL: /login
+Método: POST
+Descrição: Realiza o login de um usuário existente.
+Parâmetros do corpo da requisição:
+email (string): Endereço de e-mail do usuário.
+password (string): Senha do usuário.
+
+### Ambos endpoints acima ganham um ID através do uso da lib uuid v4() e retornam um token de acesso através da lib JWT

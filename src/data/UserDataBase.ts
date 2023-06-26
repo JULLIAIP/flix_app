@@ -14,7 +14,7 @@ export class UserDataBase extends PrismaClient {
         return result
     }
 
-    createPrismaUsers = async (user: User) => {
+    createPrismaUsers = async (user:any) => {
 
         await this.user.create({ data: user })
 

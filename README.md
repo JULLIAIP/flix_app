@@ -1,7 +1,7 @@
-Flix App
+## Flix App
 O Flix App é um projeto que simula o funcionamento de uma locadora de filmes. Ele foi desenvolvido como parte de um exercício para aprimorar habilidades em desenvolvimento web utilizando Node.js.
 
-Entidades
+## Entidades
 O projeto possui três entidades principais:
 
 User: Representa um usuário do sistema. Cada usuário possui um nome de usuário único, um endereço de e-mail e uma senha para autenticação.
@@ -17,15 +17,12 @@ Certifique-se de ter o Node.js instalado em sua máquina. Você pode encontrar o
 
 Faça o clone deste repositório para o seu ambiente de desenvolvimento local.
 
-No diretório do projeto, execute o seguinte comando para instalar as dependências necessárias:
+### No diretório do projeto, execute o seguinte comando para instalar as dependências necessárias:
 
-shell
-Copy code
 npm install
+
 Crie um arquivo .env na raiz do projeto e defina as variáveis de ambiente necessárias. Um exemplo do arquivo .env pode ser encontrado no arquivo .env.example.
 
-Execute o seguinte comando para iniciar o servidor de desenvolvimento:
+### Execute o seguinte comando para iniciar o servidor de desenvolvimento:
 
-shell
-Copy code
 npm run dev

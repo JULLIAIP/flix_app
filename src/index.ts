@@ -16,4 +16,3 @@ app.use("/movie", movieRouter)
 app.listen(3000, ()=>{
     console.log("Servidor rodando na porta 3000")
 })
-app.get("/", (req, res)=>{res.send("hello word")})

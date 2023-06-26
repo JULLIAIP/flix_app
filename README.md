@@ -32,20 +32,20 @@ npm run dev
 O Flix App fornece os seguintes endpoints para interação com a API:
 
 ### Sign Up
-URL: /signup
+<li>URL: /signup</li>
 Método: POST
 Descrição: Cria um novo usuário na aplicação.
 Parâmetros do corpo da requisição:
-username (string): Nome de usuário do novo usuário.
-email (string): Endereço de e-mail do novo usuário.
-password (string): Senha do novo usuário.
+<li>username (string): Nome de usuário do novo usuário.</li>
+<li>email (string): Endereço de e-mail do novo usuário.</li>
+<li>password (string): Senha do novo usuário.</li>
 
 ### Login
-URL: /login
+<li>URL: /login</li>
 Método: POST
 Descrição: Realiza o login de um usuário existente.
 Parâmetros do corpo da requisição:
-email (string): Endereço de e-mail do usuário.
-password (string): Senha do usuário.
+<li>email (string): Endereço de e-mail do usuário.</li>
+<li>password (string): Senha do usuário.</li>
 
 ### Ambos endpoints acima ganham um ID através do uso da lib uuid v4() e retornam um token de acesso através da lib JWT

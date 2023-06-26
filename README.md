@@ -4,13 +4,14 @@ O Flix App é um projeto que simula o funcionamento de uma locadora de filmes. E
 ## Entidades
 O projeto possui três entidades principais:
 
-User: Representa um usuário do sistema. Cada usuário possui um nome de usuário único, um endereço de e-mail e uma senha para autenticação.
 
-Movie: Representa um filme disponível na locadora. Cada filme possui um título, uma descrição, uma categoria associada e outras informações relevantes.
+### User: Representa um usuário do sistema. Cada usuário possui um nome de usuário único, um endereço de e-mail e uma senha para autenticação.
 
-Category: Representa uma categoria de filmes. Cada categoria possui um nome único e é utilizada para classificar os filmes.
+### Movie: Representa um filme disponível na locadora. Cada filme possui um título, uma descrição, uma categoria associada e outras informações relevantes.
 
-Configuração do Projeto
+### Category: Representa uma categoria de filmes. Cada categoria possui um nome único e é utilizada para classificar os filmes.
+
+## Configuração do Projeto
 Antes de executar o Flix App, é necessário configurar o ambiente. Siga os passos abaixo:
 
 Certifique-se de ter o Node.js instalado em sua máquina. Você pode encontrar o Node.js em https://nodejs.org.

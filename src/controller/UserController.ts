@@ -7,14 +7,20 @@ export class UserController {
         try {
             const { email, name, password } = req.body
 
-            await new UserBusiness().singup({email, name, password})
+            const token = await new UserBusiness().singup({email, name, password})
 
             //call business
-            res.send({ message:"Usuário cadastrado com sucesso"})
+            res.send({ message:"Usuário cadastrado com sucesso", token})
 
-        } catch (error) {
-            res.send()
-        }
+        } catch (error: any) {
+
+            if (error instanceof Error) {
+               res.send(error.message).status(400).end()
+            } else {
+               console.log(error.sqlMessage || error.message);
+               res.send("Ocorreu um erro inesperado").status(500).end()
+            }
+         }
 
     }
 }

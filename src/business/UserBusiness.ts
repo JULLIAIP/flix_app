@@ -2,6 +2,7 @@ import { UserDataBase } from "../data/UserDataBase";
 import { User } from "../models/User";
 import { HashManager } from "../services/HashManager";
 import { IdGenerate } from "../services/IdGenerate";
+import { TokenManager } from "../services/TokenManager";
 
 export class UserBusiness {
 
@@ -11,6 +12,11 @@ export class UserBusiness {
             throw new Error("Fields email, name, password are required")
         }
 
+        const user = await new UserDataBase().getUserByEmail(email);
+
+        if (user) {
+            throw new Error('Email já cadastrado')
+        }
         //id
         const id = new IdGenerate().generate()
 
@@ -24,7 +30,7 @@ export class UserBusiness {
 
         //token
 
-        const token = '';
+        const token = new TokenManager().generate(id);
 
         return token
 

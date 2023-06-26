@@ -36,4 +36,29 @@ export class UserBusiness {
 
     }
 
+    async login({ email, password }: any) {
+
+        if (!email || !password) {
+            throw new Error("Fields email, name, password are required")
+        }
+
+        const user = await new UserDataBase().getUserByEmail(email);
+
+        if (!user) {
+            throw new Error('Email not found')
+        }
+
+        const hash = await new HashManager().compare(password, user.password)
+
+        if(!hash){
+            throw new Error("Os dados não conferem")
+        }
+
+        const token = new TokenManager().generate(email);
+
+        return token
+
+    }
+
+
 }

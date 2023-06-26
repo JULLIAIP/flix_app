@@ -32,7 +32,7 @@ npm run dev
 O Flix App fornece os seguintes endpoints para interação com a API:
 
 ### Sign Up
-<li>URL: /signup</li>
+URL: /signup
 Método: POST
 Descrição: Cria um novo usuário na aplicação.
 Parâmetros do corpo da requisição:
@@ -41,7 +41,7 @@ Parâmetros do corpo da requisição:
 <li>password (string): Senha do novo usuário.</li>
 
 ### Login
-<li>URL: /login</li>
+URL: /login
 Método: POST
 Descrição: Realiza o login de um usuário existente.
 Parâmetros do corpo da requisição:

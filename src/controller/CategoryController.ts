@@ -5,6 +5,9 @@ export class CategoryController {
     async getAllCategory(req: Request, res: Response) {
         try {
 
+            const result = await new CategoryBusiness().getAllCategory()
+            res.send(result).status(200)
+
         } catch (error: any) {
 
             if (error instanceof Error) {
@@ -18,7 +21,7 @@ export class CategoryController {
     async createCategory(req: Request, res: Response) {
         try {
 
-            const {name} = req.body
+            const { name } = req.body
             const token = req.headers.authorization
 
             const result = await new CategoryBusiness().createCategory(name, token!)

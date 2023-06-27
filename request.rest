@@ -22,5 +22,8 @@ Content-Type: application/json
 Authorization: eyJhbGciOiJIUzI1NiJ9.anVsbGlhQGdtYWlsLmNvbQ.-uf7sdhwtZej4vKvvpzQg-wv20FKxyhBY-rP3zbh_0g
 
 {
-    "name":"romance"
+    "name":"terror"
 }
+
+###
+GET http://localhost:3000/category/

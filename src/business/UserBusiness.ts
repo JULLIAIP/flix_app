@@ -4,7 +4,7 @@ import { HashManager } from "../services/HashManager";
 import { IdGenerate } from "../services/IdGenerate";
 import { TokenManager } from "../services/TokenManager";
 
-export class UserBusiness {
+export class UserBusiness {  
 
     async singup({ email, name, password }: any) {
 

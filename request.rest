@@ -3,7 +3,7 @@ Content-Type: application/json
 
 {
     "name":"júllia", 
-    "email":"jullia2@gmail.com",
+    "email":"jullia3@gmail.com",
     "password":"123"
 }
 ###
@@ -12,5 +12,18 @@ Content-Type: application/json
 
 {
     "email":"jullia@gmail.com",
-    "password":"1234"
+    "password":"123"
 }
+
+###
+
+POST http://localhost:3000/category/
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.anVsbGlhQGdtYWlsLmNvbQ.-uf7sdhwtZej4vKvvpzQg-wv20FKxyhBY-rP3zbh_0g
+
+{
+    "name":"terror"
+}
+
+###
+GET http://localhost:3000/category/

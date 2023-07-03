@@ -19,7 +19,7 @@ export class CategoryBusiness {
         }
 
         if (!token) {
-            throw new Error("Informe o token de acesso")
+            throw new Error("Fields email, name, password are required")
         }
         const verifiedToken = new TokenManager().getData(token)
 
